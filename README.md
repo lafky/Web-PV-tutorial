@@ -3,8 +3,12 @@ A tutorial to demonstrate how to make webpages that update with EPICS PVs.  It a
 
 Download jquery.js, new_camonitor.js, and new_status.html to whatever directory you want to work in.
 
-There are currently two functions in new_camonitor that interact with the websockets server.
+There are currently two functions in new_camonitor.js that interact with the websockets server.
 
 The first, "monitor" reports the pv status as text and its alarm status as text color.
 
-The second, "statusMon", reports the pv alarm status as background color.  See the new_status.html example for more detail
+The second, "statusMon", reports the pv alarm status as background color.  See the new_status.html example for more detail.
+
+You may have to add some if/then statements to new_camonitor.js to convert numerical statuses to text statuses.  EPICS is not uniform and those if/then statements can get out of hand quickly!
+
+Have fun!
